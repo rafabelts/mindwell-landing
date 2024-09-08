@@ -1,0 +1,57 @@
+---
+interface Props {
+    price: string;
+    plan: string;
+}
+
+const { price, plan } = Astro.props;
+---
+
+<section>
+    <div>
+        <h3>{price}</h3>
+        <p>{plan}</p>
+    </div>
+</section>
+
+<style>
+
+section {
+    width: 370px;
+    height: 251px;
+    flex-shrink: 0;
+    filter: drop-shadow(2px 6px 4px #BBE0FF);
+    background: #FFF;
+    display: flex;
+    justify-content:center;
+   
+}
+div{
+    display: flex;
+    width: 173px;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content:center;
+}
+
+h3 {
+    color: #1E4B73;
+    text-align: center;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 144px */
+}
+
+p {
+    color: #005BA9;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 48px */
+    align-self: stretch;
+}
+
+</style>

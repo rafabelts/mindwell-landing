@@ -1,0 +1,53 @@
+---
+interface Props {
+    icon: string;
+	title: string;
+}
+
+const { icon, title } = Astro.props;
+---
+
+<section>
+    <div>
+        <img src={icon}/>
+        <p>{title}</p>
+    </div>
+</section>
+
+<style>
+section {
+    width: 270px;
+    height: 88px;
+    filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.25));
+    flex-shrink: 0;
+    background: #015BA8;
+    border-radius: 14px;
+    display: flex;
+    align-self: center;
+    justify:center;
+    align-items: center;
+ 
+}
+
+div {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    gap: 6px;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+}
+
+p {
+    width: 173px;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+</style>
+
