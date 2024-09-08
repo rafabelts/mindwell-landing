@@ -16,7 +16,6 @@ section {
     justify-content: center;
     align-items: center;
     gap: 100px; 
-    box-sizing: border-box;
 }
 
 img {
@@ -32,7 +31,8 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 20px; }
+    gap: 20px; 
+}
 
 h2 {
     color: #000;
@@ -48,5 +48,28 @@ p {
     font-weight: 400;
     line-height: 1.5;
 }
+
+@media (max-width:1200px) {
+    section {
+        width: 100vh;
+    }
+    header {
+        width: 400px;
+    }
+
+    img {
+        width: 213px;
+        height: 213px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 24px;
+    }
+}
+
 </style>
 
